@@ -22,8 +22,8 @@ CREATE TABLE product_attribute (
     attribute_type_id INT,
     value VARCHAR(100),
     PRIMARY KEY (product_id, attribute_type_id)
-    -- FOREIGN KEY (product_id) REFERENCES products(product_id),
-    -- FOREIGN KEY (attribute_type_id) REFERENCES attribute_type(attribute_type_id)
+    FOREIGN KEY (product_id) REFERENCES products(product_id),
+    FOREIGN KEY (attribute_type_id) REFERENCES attribute_type(attribute_type_id)
 ); 
 INSERT INTO attribute_category (name) VALUES 
 ('Physical'), 
