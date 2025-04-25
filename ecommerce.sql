@@ -1,3 +1,4 @@
+CREATE database ecommerce_db;
 USE ecommerce_db;
 
 -- BRAND TABLE
@@ -31,11 +32,6 @@ image_url VARCHAR(200),
 FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
 
-
-
-
-CREATE database ecommerce_db;
-USE ecommerce_db;
 
 CREATE TABLE attribute_category (
     attribute_category_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -74,5 +70,3 @@ VALUES (2, 1, 'Cotton');
 
 SELECT * FROM attribute_category;
 SELECT * FROM attribute_type;
--- SELECT * FROM product_attribute;
--- SELECT * FROM products WHERE product_id = 2;
