@@ -41,7 +41,7 @@ The product_attribute table is linked to both the product and attribute_type tab
 # Team Roles & Contributions
 The team has divided the project into clear sections, each focusing on a specific aspect of the database:
 
-Member 1(Wandile-lab: Focused on designing and implementing product-related tables (e.g., product, brand, category) and handling GitHub management.
+Member 1(Wandile-lab): Focused on designing and implementing product-related tables (e.g., product, brand, category) and handling GitHub management.
 
 Member 2(SisionKitiyio): Focused on variations and sizes, including tables for product items and their relationships to the product table.
 
