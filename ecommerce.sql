@@ -68,5 +68,16 @@ INSERT INTO attribute_type (name, attribute_category_id) VALUES
  INSERT INTO product_attribute (product_id, attribute_type_id, value)
 VALUES (2, 1, 'Cotton');
 
-SELECT * FROM attribute_category;
-SELECT * FROM attribute_type;
+INSERT INTO product (product_name) VALUES ('Basic T-shirt');
+
+INSERT INTO size_category (category_name) VALUES ('Clothing');
+
+INSERT INTO size_option (size_label, category_id) VALUES ('S', 1), ('M', 1), ('L', 1);
+
+INSERT INTO color (color_name) VALUES ('Red'), ('Blue');
+
+INSERT INTO product_variation (product_id, variation_name)
+VALUES (1, 'Basic T-shirt Unisex');
+
+INSERT INTO product_item (variation_id, color_id, size_id, sku_code, stock_qty)
+VALUES (1, 1, 3, 'TSHIRT-RED-L', 100);
